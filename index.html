@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <style>
+      body,
+      html {
+        background-color: #020e1a;
+        font-family: Roboto, sans-serif;
+        font-size: 18px;
+        margin: 0;
+        padding: 0;
+      }
+
+      em {
+        color: #69dc60;
+        font-style: normal;
+      }
+
+      h1 {
+        color: #69dc60;
+        font-size: 72px;
+        margin: 20px 0;
+      }
+
+      img {
+        border-radius: 50%;
+        box-shadow: 0 0 20px 0 black;
+        height: 200px;
+        width: 200px;
+      }
+
+      nav {
+        display: flex;
+        padding-bottom: 100px;
+        padding-top: 60px;
+        justify-content: space-between;
+      }
+
+      nav span {
+        color: #a3a3a3;
+      }
+      
+      nav ul {
+        display: flex;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      nav ul li {
+        margin-right: 8px;
+      }
+
+      nav ul li:last-of-type {
+        margin-right: 0px;
+      }
+
+      nav ul li a {
+        color: #69dc60;
+        display: block;
+      }
+
+      p {
+        color: #a3a3a3;
+        line-height: 1.5;
+        margin-bottom: 60px;
+      }
+
+      .button {
+        align-items: center;
+        background-color: transparent;
+        border: 1px solid #69dc60;
+        border-radius: 70px;
+        color: #69dc60;
+        display: flex;
+        height: 70px;
+        justify-content: center;
+        width: 270px;
+      }
+
+      .button:hover {
+        background-color: #69dc60;
+        color: #020e1a;
+      }
+
+      .container {
+        margin: 0 auto;
+        padding: 20px;
+        max-width: 960px;
+      }
+
+      .gradient {
+        background: rgb(2,14,26);
+        background: linear-gradient(0deg, rgba(2,14,26,1) 0%, rgba(9,35,62,1) 100%);
+      }
+
+      .skip-to-main-content-link {
+        position: absolute;
+        left: -9999px;
+        top: -9999px;
+      }
+
+      @media (max-width: 500px) {
+        body,
+        html {
+          font-size: 16px;
+        }
+
+        h1 {
+          font-size: 60px;
+        }
+
+        main {
+          text-align: center;
+        }
+
+        nav {
+          padding-bottom: 60px;
+          padding-top: 40px;
+        }
+
+        .button {
+          margin: 0 auto;
+        }
+      }
+    </style>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org/",
+        "@type": "Person",
+        "email": "mclean.webdev@gmail.com",
+        "familyName": "McLean",
+        "gender": "male",
+        "givenName": "Christopher",
+        "jobTitle": "Software Engineer"
+      }
+    </script>
+  </head>
+  <body>
+    <div class="gradient">
+      <div class="container">
+        <a class="skip-to-main-content-link" href="#main">
+          Skip to main content
+        </a>
+        <nav>
+          <span>
+            Chris McLean
+          </span>
+          <ul>
+            <li>
+              <a href="https://www.linkedin.com/in/christopher-mclean-78926123/">
+                LinkedIn
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/havok2905">
+                Github
+              </a>
+            </li>
+            <li>
+              <a href="mailto:mclean.webdev@gmail.com">
+                Email
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <main id="main">
+          <img
+            alt="personal photo"
+            height="200px"
+            src="./me.png"
+            width="200px"/>
+          <h1>I'm Chris.</h1>
+          <p>
+            I'm a full-stack software engineer located in <em>Denver</em> with an expertise
+            in front-end engineering. I've been developing for the web for over a
+            decade. Lately, I develop in <em>Typescript</em>, <em>React</em>, <em>Node</em>, and <em>Ruby</em>.
+          </p>
+          <a class="button" href="mailto:mclean.webdev@gmail.com">
+            Let's work together!
+          </a>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
